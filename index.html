@@ -21,22 +21,21 @@
     <!--Search  -->
     <div class="bg-light p-3 rounded">
       <div class="input-group input-group-lg">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-danger">Danger</button>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Search Query</span>
+        <input id="searchBox" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button id="searchButton" type="button" class="btn btn-danger">Search</button>
       </div>
     </div>
     <!-- error msg -->
-    <div class="alert alert-danger mt-3" role="alert">
+    <div id="errorMessage" class="alert alert-danger mt-3" role="alert">
       Error message here! 😒
     </div>
     <!-- Movie Card -->
-    <div class="card" style="width: 18rem;">
-      <img src="./img/placeHolder.jpg" class="card-img-top" alt="movie">
+    <div id="movieCard" class="card" style="width: 18rem;">
+      <img src="./img/placeHolder.jpg" id="movieImage" class="card-img-top" alt="movie">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 id="movieTitle" class="card-title">Card title</h5>
+        <p id="movieBlurb" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
   </div>
